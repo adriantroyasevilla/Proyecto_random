@@ -2,11 +2,36 @@
 
 <?php
 
-function generar_nombre_aleatorio(&$nombres, &$apellidos){
-	$nombreAleatorio = $nombres[ mt_rand(0, count($nombres) -1) ];
-	$apellidoAleatorio = $apellidos[ mt_rand(0, count($apellidos) -1) ];
+function generar_nombre_aleatorio(&$nombres){
+	$nombre1 = $nombres[ mt_rand(0, count($nombres) -1) ];
+	$nombre2 = $nombres[ mt_rand(0, count($nombres) -1) ];
+	$nombre3 = $nombres[ mt_rand(0, count($nombres) -1) ];
+	$nombre4 = $nombres[ mt_rand(0, count($nombres) -1) ];
+	$nombre5 = $nombres[ mt_rand(0, count($nombres) -1) ];
+	$nombre6 = $nombres[ mt_rand(0, count($nombres) -1) ];
+	$nombre7 = $nombres[ mt_rand(0, count($nombres) -1) ];
+	$nombre8 = $nombres[ mt_rand(0, count($nombres) -1) ];
+	$nombre9 = $nombres[ mt_rand(0, count($nombres) -1) ];
+	$nombre10 = $nombres[ mt_rand(0, count($nombres) -1) ];
+	$nombre11 = $nombres[ mt_rand(0, count($nombres) -1) ];
+	$nombre12 = $nombres[ mt_rand(0, count($nombres) -1) ];
+	$nombre13 = $nombres[ mt_rand(0, count($nombres) -1) ];
+	$nombre14 = $nombres[ mt_rand(0, count($nombres) -1) ];
+	$nombre15 = $nombres[ mt_rand(0, count($nombres) -1) ];
+	$nombre16 = $nombres[ mt_rand(0, count($nombres) -1) ];
+	// $apellidoAleatorio = $apellidos[ mt_rand(0, count($apellidos) -1) ];
 
-	return "$nombreAleatorio - $apellidoAleatorio ";
+    // if($nombreAleatorio != $apellidoAleatorio){
+
+        return "$nombre1 - $nombre2 <br>";
+        return "$nombre3 - $nombre4 <br>";
+        return "$nombre5 - $nombre6 <br>";
+        return "$nombre7 - $nombre8 <br>";
+        return "$nombre9 - $nombre10 <br>";
+        return "$nombre11 - $nombre12 <br>";
+        return "$nombre13 - $nombre14 <br>";
+        return "$nombre15 - $nombre16 <br>";
+    // }
 }
 ?>
 
@@ -37,11 +62,11 @@ function generar_nombre_aleatorio(&$nombres, &$apellidos){
 <?php
 
 
-$nombres = ["jorge", "Julia", "Jose", "Mateo", "Jaume", "Petro", "Alejandro", "Fran","Adri","Lolo","Cristian","Jordi","Luis","David","Tony"];
-$apellidos = ["jorge", "Julia", "Jose", "Mateo", "Jaume", "Petro", "Alejandro", "Fran","Adri","Lolo","Cristian","Jordi","Luis","David","Tony"];
+$nombres = ["Jorge", "Julia", "Jose", "Mateo", "Jaume", "Petro", "Alejandro", "Fran","Adri","Lolo","Cristian","Jordi","Luis","David","Tony"];
+// $apellidos = ["jorge", "Julia", "Jose", "Mateo", "Jaume", "Petro", "Alejandro", "Fran","Adri","Lolo","Cristian","Jordi","Luis","David","Tony"];
  
-$nombre = generar_nombre_aleatorio($nombres, $apellidos);
-echo $nombre; // Salida de ejemplo -> pedro smith pérez
+$rand = generar_nombre_aleatorio($nombres);
+echo $rand; // Salida de ejemplo -> pedro smith pérez
 ?>
 
 
